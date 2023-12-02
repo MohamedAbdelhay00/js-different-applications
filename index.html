@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <title>Js Assignment-(1)</title>
+</head>
+
+<body>
+    <!-- program 1 -->
+    <div class="program1">
+        <form class="w-50 p-4" onsubmit="return false">
+            <h1 class="py-3">Print number Program (1)</h1>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Enter a number</label>
+                <input type="text" class="form-control" id="enteredNum" aria-describedby="emailHelp">
+                <h2 class="py-4" id="out1"></h2>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="printTheNum()">Submit</button>
+        </form>
+    </div>
+
+    <!-- program 2 -->
+
+    <div class="program-2">
+        <form class="w-50 p-4" onsubmit="return false">
+            <h1 class="py-3">divided by 3/4 Program (2)</h1>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Enter a number to see if that can be divided by 3 or
+                    4:</label>
+                <input type="text" class="form-control" id="enteredNum2" aria-describedby="emailHelp">
+                <h2 class="py-4" id="out2"></h2>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="printYesNo()">Submit</button>
+        </form>
+    </div>
+
+    <!-- program 3 -->
+
+    <div class="program-3">
+        <form class="w-50 p-4" onsubmit="return false">
+            <h1 class="py-3">Max Program (3)</h1>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Enter 2 integers to print the max: </label>
+                <input type="text" class="form-control my-2" id="firstOne" aria-describedby="emailHelp">
+                <input type="text" class="form-control my-2" id="secondOne" aria-describedby="emailHelp">
+                <h2 class="py-4" id="max"></h2>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="getTheMax()">Submit</button>
+        </form>
+    </div>
+
+    <!-- program 4 -->
+
+    <div class="program-4">
+        <form class="w-50 p-4" onsubmit="return false">
+            <h1 class="py-3">Positive/Negative Program (4)</h1>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Positive / Negative </label>
+                <input type="text" class="form-control" id="signNum" aria-describedby="emailHelp">
+                <h2 class="py-4" id="sign"></h2>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="signOfTheNum()">Submit</button>
+        </form>
+    </div>
+
+    <!-- program 5 -->
+
+    <div class="program-5">
+        <form class="w-50 p-4" onsubmit="return false">
+            <h1 class="py-3">Max/Min of three Program (5)</h1>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Max/Min </label>
+                <input type="text" class="form-control my-2" id="num1" aria-describedby="emailHelp">
+                <input type="text" class="form-control my-2" id="num2" aria-describedby="emailHelp">
+                <input type="text" class="form-control my-2" id="num3" aria-describedby="emailHelp">
+                <h2 class="py-4" id="maxOfThree"></h2>
+                <h2 class="py-4" id="minOfThree"></h2>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="maxiOfThree()">Submit</button>
+        </form>
+    </div>
+
+    <!-- program 6 -->
+
+    <div class="program-6">
+        <form class="w-50 p-4" onsubmit="return false">
+            <h1 class="py-3">Odd / Even Program (6+7)</h1>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Odd / Even </label>
+                <input type="text" class="form-control my-2" id="oddEven_in" aria-describedby="emailHelp">
+                <h2 class="py-4" id="oddEven"></h2>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="oddEven()">Submit</button>
+        </form>
+    </div>
+
+    <!-- program 8 -->
+
+    <div class="program-8">
+        <form class="w-50 p-4" onsubmit="return false">
+            <h1 class="py-3">Vowels/Constants Program (8)</h1>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Vowels/Constants: </label>
+                <input type="text" class="form-control my-2" id="vc_input" aria-describedby="emailHelp">
+                <h2 class="py-4" id="vc_output"></h2>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="vowelsConstants()">Submit</button>
+        </form>
+    </div>
+
+    <!-- program 9 -->
+
+    <div class="program-9">
+        <form class="w-50 p-4" onsubmit="return false">
+            <h1 class="py-3">Print all numbers between 1 to
+                that number Program (9)</h1>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Print all numbers: </label>
+                <input type="text" class="form-control my-2" id="theNumber" aria-describedby="emailHelp">
+                <div id="printAllNumbers"></div>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="newP9()">Submit</button>
+        </form>
+    </div>
+
+    <!-- program 10 -->
+
+    <div class="program-10">
+        <form class="w-50 p-4" onsubmit="return false">
+            <h1 class="py-3">Print a multiplication table up to 12. (10)</h1>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Multiplication up to 12: </label>
+                <input type="text" class="form-control my-2" id="multNum" aria-describedby="emailHelp">
+                <div id="printMultiplication"></div>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="multiplication()">Submit</button>
+        </form>
+    </div>
+
+    <!-- program 11 -->
+
+    <div class="program-11">
+        <form class="w-50 p-4" onsubmit="return false">
+            <h1 class="py-3">Print all even numbers between 1 to
+                that number Program (11)</h1>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Print all even numbers: </label>
+                <input type="text" class="form-control my-2" id="evenNumber" aria-describedby="emailHelp">
+                <div id="printAllEvenNumbers"></div>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="allNumbers()">Submit</button>
+        </form>
+    </div>
+
+    <!-- program 12 -->
+
+    <div class="program-12">
+        <form class="w-50 p-4" onsubmit="return false">
+            <h1 class="py-3">Print the power (12)</h1>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Print the power: </label>
+                <input type="text" class="form-control my-2" id="theInteger" aria-describedby="emailHelp">
+                <input type="text" class="form-control my-2" id="thePower" aria-describedby="emailHelp">
+                <div id="powered"></div>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="powerNum()">Submit</button>
+        </form>
+    </div>
+
+    <!-- program 12 II -->
+
+    <div class="program-13">
+        <form class="w-50 p-4" onsubmit="return false">
+            <h1 class="py-3">Enter marks of five subjects and calculate total, average and
+                percentage. (12 II)</h1>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">The average and percentage: </label>
+                <input type="text" class="form-control my-2" id="sub1" aria-describedby="emailHelp">
+                <input type="text" class="form-control my-2" id="sub2" aria-describedby="emailHelp">
+                <input type="text" class="form-control my-2" id="sub3" aria-describedby="emailHelp">
+                <input type="text" class="form-control my-2" id="sub4" aria-describedby="emailHelp">
+                <input type="text" class="form-control my-2" id="sub5" aria-describedby="emailHelp">
+                <h2 id="total"></h2>
+                <h2 id="average"></h2>
+                <h2 id="percentage"></h2>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="averageNpercentage()">Submit</button>
+        </form>
+    </div>
+
+    <!-- program 13 -->
+
+    <div class="program-13">
+        <form class="w-50 p-4" onsubmit="return false">
+            <h1 class="py-3">No. of the days in each month (13)</h1>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Enter the month no.: </label>
+                <input type="text" class="form-control my-2" id="monthNo" aria-describedby="emailHelp">
+                <h2 id="noOfDays"></h2>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="daysInMonth()">Submit</button>
+        </form>
+    </div>
+
+    <!-- program 14 -->
+
+    <div class="program-14">
+        <form class="w-50 p-4" onsubmit="return false">
+            <h1 class="py-3">Find percentage and grade (14)</h1>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Enter the marks of the 5 subjects: </label>
+                <input type="text" class="form-control my-2" id="subject1" aria-describedby="emailHelp">
+                <input type="text" class="form-control my-2" id="subject2" aria-describedby="emailHelp">
+                <input type="text" class="form-control my-2" id="subject3" aria-describedby="emailHelp">
+                <input type="text" class="form-control my-2" id="subject4" aria-describedby="emailHelp">
+                <input type="text" class="form-control my-2" id="subject5" aria-describedby="emailHelp">
+                <h2 id="percentageOf5"></h2>
+                <h2 id="gradeOf5"></h2>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="percentageAndGrade()">Submit</button>
+        </form>
+    </div>
+
+    <!-- program 15 -->
+
+    <div class="program-15">
+        <form class="w-50 p-4" onsubmit="return false">
+            <h1 class="py-3">No. of the days in each month Using switch case (15)</h1>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Enter the month no.: </label>
+                <input type="text" class="form-control my-2" id="monthNos" aria-describedby="emailHelp">
+                <h2 id="noOfDayss"></h2>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="daysInMonths()">Submit</button>
+        </form>
+    </div>
+
+     <!-- program 16 -->
+
+     <div class="program-16">
+        <form class="w-50 p-4" onsubmit="return false">
+            <h1 class="py-3">Vowels/Constants Program using Switch case(16)</h1>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Vowels/Constants: </label>
+                <input type="text" class="form-control my-2" id="vc_inputs" aria-describedby="emailHelp">
+                <h2 class="py-4" id="vc_outputs"></h2>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="vowelsConstantss()">Submit</button>
+        </form>
+    </div>
+
+    <!-- program 17 -->
+
+    <div class="program-17">
+        <form class="w-50 p-4" onsubmit="return false">
+            <h1 class="py-3">Max Program using Switch case(17)</h1>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Enter 2 integers to print the max: </label>
+                <input type="text" class="form-control my-2" id="firstOnes" aria-describedby="emailHelp">
+                <input type="text" class="form-control my-2" id="secondOnes" aria-describedby="emailHelp">
+                <h2 class="py-4" id="maxs"></h2>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="getTheMaxs()">Submit</button>
+        </form>
+    </div>
+
+    <!-- program 18 -->
+
+    <div class="program-18">
+        <form class="w-50 p-4" onsubmit="return false">
+            <h1 class="py-3">Odd / Even Program using Switch case(18)</h1>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Odd / Even </label>
+                <input type="text" class="form-control my-2" id="oddEven_ins" aria-describedby="emailHelp">
+                <h2 class="py-4" id="oddEvens"></h2>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="oddEvens()">Submit</button>
+        </form>
+    </div>
+
+    <!-- program 19 -->
+
+    <div class="program-19">
+        <form class="w-50 p-4" onsubmit="return false">
+            <h1 class="py-3">Positive/Negative Program using Switch case(19)</h1>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Positive / Negative </label>
+                <input type="text" class="form-control" id="signNums" aria-describedby="emailHelp">
+                <h2 class="py-4" id="signs"></h2>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="signOfTheNums()">Submit</button>
+        </form>
+    </div>
+
+    <!-- program 20 -->
+
+    <div class="program-20">
+        <form class="w-50 p-4" onsubmit="return false">
+            <h1 class="py-3">Simple calculator using Switch case(20)</h1>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Enter 2 intergers and the operation sign </label>
+                <input type="text" class="form-control my-2" id="intOne" aria-describedby="emailHelp" placeholder="num1">
+                <input type="text" class="form-control my-2" id="opSign" aria-describedby="emailHelp" placeholder="sign ex.: + - / *">
+                <input type="text" class="form-control my-2" id="intTwo" aria-describedby="emailHelp" placeholder="num2">
+                <h2 class="py-4" id="result"></h2>
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="simpleCalc()">Submit</button>
+        </form>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
